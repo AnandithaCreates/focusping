@@ -113,8 +113,22 @@ npm run build
 - PWA mobile version
 
 ---
+## 🔄 Technical Workflow & Impact
+
+### **The Workflow**
+The application operates on a purely event-driven architecture to ensure zero idle costs:
+1. **Trigger:** User inputs study data via the React frontend.
+2. **Processing:** A REST request is sent through **AWS API Gateway**, triggering a **Node.js Lambda** function.
+3. **Logic:** The Lambda function calculates productivity metrics based on duration-intensity algorithms.
+4. **Response:** Results are piped back to the UI in real-time, providing immediate cognitive feedback to the user.
+
+### **The Impact**
+FocusPing was designed to solve the "productivity paradox"—where tracking work often becomes a distraction itself. 
+* **Cost Efficiency:** By utilizing AWS Amplify (paused) and Lambda, the project demonstrates a **100% serverless** footprint, meaning costs only incur during active usage.
+* **Behavioral Science:** Uses Pomodoro-inspired logic to encourage "Deep Work" states, helping users recognize when their focus sessions are too short to be effective.
+* **Developer Readiness:** Built as a template for scalable cloud applications, proving how modern UI (Framer Motion) can be paired with robust cloud backends.
+
 
 ## 👩‍💻 Developer
-
 Built by Ananditha ⚡  
 Focus creates consistency.
